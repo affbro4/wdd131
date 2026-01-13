@@ -1,10 +1,19 @@
-
-<div id="content">
-    <h1>HTML, CSS, and JS</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="dom.css" rel="stylesheet">
+    <script src="dom.js" defer></script>
+</head>
+<body>
+    <div id="content">
+    <h1 id="myH1">HTML, CSS, and JS</h1>
     
     <p>The foundational technologies that power websites and web applications</p>
     <hr>
-    <img src="https://wddbyui.github.io/wdd131/images/trifecta.png" alt="JS, CSS, and HTML logos">
+    <img id="img" src="https://wddbyui.github.io/wdd131/images/trifecta.png" alt="JS, CSS, and HTML logos">
     <div id="topics">
         <h2>HyperText Markup Language</h2>
         <ul class="list">
@@ -21,6 +30,20 @@
             <li>Adds interactivity and dynamic behavior.</li>
             <li>Without JavaScript nothing on the page responds dynamically to user actions.</li>
         </ul>
+    <label for="webdevlist">Choose One:</label>
+    <select name="code" id="webdevlist">
+        <option>Choose One:</option>
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="js">JavaScript</option>
+    </select>         
     </div>
 </div>
+    
+</body>
+</html>
+
+
+
+
                 
