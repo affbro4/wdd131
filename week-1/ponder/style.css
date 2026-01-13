@@ -2,9 +2,31 @@
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
+    border: 1px solid rgb(121, 120, 120);
 }
+
 body{   text-align: center;
-        background-color: gray;
+        background-color: rgb(193, 190, 190);
 
 }
-li{list-style-type: none;}
+li{list-style-type: none;
+
+}
+
+hr{ 
+    border: 2px solid blue ;
+    width: 70%;
+}
+
+.list {
+    text-align: left;
+    margin: auto ;
+    width: 350px;
+}
+img {
+    width: 350px;
+}
+
+p {
+    color :blue;
+}
