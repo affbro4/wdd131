@@ -4,6 +4,7 @@ let selectElem = document.getElementById('webdevlist');
 selectElem.addEventListener('change', function(){
     let codeValue = selectElem.value;
     console.log(codeValue);
+
     if (codeValue === 'html' ) {
     console.log ("detected html");
     document.getElementById("topics").innerHTML = "Deleted"}
