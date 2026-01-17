@@ -6,7 +6,7 @@ selectElem.addEventListener('change', changeTheme);
 
 function changeTheme() {
     let current = selectElem.value;
-    if (current == 'dark') {
+    if (current == 'dark mode') {
         // code for changes to colors and logo
         document.body.style.backgroundColor = 'rgb(51, 51, 51)';
         document.body.style.color = 'white'
