@@ -25,13 +25,15 @@ section {
     background-color: white;
     margin: 1em;
     border: 1px solid #ccc;
+    
    
-  
+
 }
 nav a {
     padding: 20px;
     color: black;
     display: none;
+
 }
 nav a:hover {
     text-decoration: none;
@@ -55,7 +57,12 @@ footer {
 nav.active a {
     display: block; 
     text-align: center;
+    text-decoration: underline !important;
+    text-decoration-color: black !important;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 10px;
 }
+
           
 @media screen and (min-width: 728px) {
 
@@ -65,23 +72,26 @@ nav.active a {
         
         }
     nav a {
-        display: inline;
+        display: inline-block;
         margin-left: auto;
     }
     button {
         display: none;
     }
+    nav {
+        text-align: right;
+    }
 
 
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
     main {
         flex-direction: row;
         justify-content: space-around;
     }
     nav a {
-        display: inline;
+        display: inline-block;
         margin-left: auto;
     }
     button {
@@ -90,6 +100,9 @@ nav.active a {
     section {
         flex: 1;
         max-width: 30%;
+    }
+    nav {
+        text-align: right;
     }
 
 }
