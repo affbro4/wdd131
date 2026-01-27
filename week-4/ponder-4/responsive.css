@@ -28,8 +28,7 @@ nav a {
     padding: 20px;
     color: black;
     display: none;
-   border-top: 1.5px solid black;
-   text-decoration: none;
+   
 }
 nav a:hover {
     text-decoration: none;
@@ -56,6 +55,8 @@ footer {
 nav.active a {
     display: block; 
     text-align: center;
+    border-top: 1.5px solid black;
+    text-decoration: none;
 
 }
 
