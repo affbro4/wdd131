@@ -24,12 +24,7 @@ section {
   margin: 1em;
   border: 1px solid #ccc;
 }
-nav a {
-    padding: 20px;
-    color: black;
-    display: none;
-   
-}
+
 nav a:hover {
     text-decoration: none;
     color: #616061;
@@ -52,11 +47,25 @@ nav a:hover {
 footer {
     text-align: center;
 }
+
+nav a {
+    padding: 20px;
+    color: black;
+    max-height: 0;       
+    overflow: hidden;     
+    opacity: 0;           
+    transition: max-height 0.2s ease-out, opacity 0.2s ease-out;
+    width: 100%;
+   
+}
 nav.active a {
     display: block; 
     text-align: center;
     border-top: 1.5px solid black;
     text-decoration: none;
+    max-height: 250px;   
+    opacity: 1;
+    transition: max-height 0.4 ease-in-out, opacity 0.4s ease-in-out;
 
 }
 
@@ -81,10 +90,13 @@ nav.active a {
         display: none;
     }
     nav a {
-        display: inline;
+        opacity: 1;
+        transition: none;
+
     }
     nav {
         text-align: right;
+        transition: none;
     }
 }
 
