@@ -1,5 +1,5 @@
 
-const words = ['watermelon', 'peach', 'apple', 'tomato', 'grape'];
+const words = ['watermelon', 'peach', 'apple', 'tomato', 'grape','stawbery', 'pineapple'];
 
 
 const students = [
@@ -42,18 +42,24 @@ students.forEach((student, index) => {
     
     
     displayList.appendChild(li);
-
-    
-    
-
 });
 
 
-const fruitElements = document.querySelectorAll("#fruit li");
-words.forEach((fruit, index) => {
+const fruitElements = document.getElementById('fruit');
+
+words.forEach((fruit) => {
     const listItem = document.createElement('li');
-    listItem.innerText = fruit;
-    document.querySelector("#fruit").appendChild(listItem);
-    console.log(`[${index}] = ${fruit}`)
+    listItem.textContent = fruit;
+    fruitElements.appendChild(listItem);
+    console.log(fruit)
     
 });
+
+
+let html = '';
+
+words.forEach((fruit) => {
+    html += `<li>${fruit}</li>`;
+});
+
+fruitElements.innerHTML = html;
