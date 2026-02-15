@@ -51,7 +51,7 @@ const articles = [
                 <h2>${book.title}</h2>
                 <img src= ${book.imgSrc} alt= ${book.imgAlt}>
                 <p id='desc'> ${book.description}</p>
-                <p id='p1'><strong>${book.date}</strong></p>
+                <p id='p1'><strong>${book.date}</strong> </p>
                 <p id='p2'><strong>${book.ages}</strong> </p>
                 <p id='p3'><strong>${book.genre}</strong> </p>
                 <p id='p4'><span aria-label=" ${book.stars.length} out of 5 stars"> ${book.stars}</span> </p>        
