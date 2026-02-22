@@ -23,7 +23,6 @@ function submitHandler(event) {
 
   let cardNumber = document.querySelector('#creditCardNumber');
   const cardNum = cardNumber.value.trim();
-  if (paymentSelect.value === 'creditCard') {
     // Check if it's numeric and valid in one go
     
       if (!/^\d{16}$/.test(cardNum)) {
@@ -51,7 +50,7 @@ function submitHandler(event) {
     // Success: show a confirmation message
     const formContainer = document.getElementById('checkoutForm');
     formContainer.innerHTML = '<h2>Thank you for your purchase.</h2>';
-}
+
   
 document.querySelector('#checkoutForm').addEventListener('submit', submitHandler)
           

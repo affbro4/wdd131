@@ -17,18 +17,24 @@ button {
     background-color: #d3d3d3;
     display: grid;  
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 80px 80px 80px;
     grid-column: 1/3;
     grid-row: 1/3;
     z-index: 2;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    
 }
 #total {
     grid-column: 1/2;
     grid-row: 1/2;
+    max-height: 50px;
 }
 #emoji {
     grid-column: 2/3;
     grid-row: 1/2;
+    font-size: 50px;
+    text-align: right;
 }
 #creditCardLabel{
     grid-column: 1/2;
@@ -41,6 +47,16 @@ button {
 #cardExpiration {
     grid-column: 2/3;
     grid-row: 3/4;
+    margin-left: 25px;
+}
+#year {
+    display: inline-block;
+    max-width: 50px;
+}
+
+#month {
+    display: inline-block;
+    max-width: 50px;
 }
 #cardBack {
     background-color: #d3d3d3;
@@ -50,35 +66,38 @@ button {
     grid-column: 2/4;
     grid-row: 2/4;
     z-index: 1;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 #blackBorder {
     background-color: black;
     max-height: 50px;
     grid-column: 2/3;
     grid-row: 1/2;
+    margin-top: 15px;
 }
 #CVC {
     grid-column: 2/3;
     grid-row: 3/4;
+    margin-left: 20px;
+    margin-right: 20px;
 }
-
-label {
-    display: block;
-    margin-bottom: 8px;
-  }
 
 input{
     width: 100%;
     padding: 12px;
     margin-bottom: 10px;
     box-sizing: border-box;
-    border-radius: 0.5px;
+    border-radius: 5px;
+   
   }
 button {
     background-color: #efefef;
-    padding: 10px 15px;
-    border-radius: 0.5px;
+    border-radius: 7px;
+    max-height: 45px;
+    margin-top: 15px;
     cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   }
 .errors {
     white-space: pre-line; /*needed for 2 errors to be on separate lines*/

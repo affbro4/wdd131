@@ -9,23 +9,23 @@
 </head>
 <body>
     <main>
-      <section class="errors"></section>
+      
       <form id="checkoutForm" action="completed.html" method="get">
         <p id="creditCardNumberContainer" class="hide" role="region" aria-labelledby="creditCardLabel"></p>
         <section id="cardFront">
-        <label id="total">TOTAL: $199</label>
+        <label id="total"><strong>TOTAL: $199</strong></label>
         <label id="emoji">💳</label>
-        <label id="creditCardLabel" for="creditCardNumber">CARD NUMBER
+        <label id="creditCardLabel" for="creditCardNumber"><strong>CARD NUMBER</strong>
             <input
                 type="text"
                 id="creditCardNumber"
                 name="creditCardNumber"
                 pattern="[0-9]{16}"
-                placeholder="Enter 16 digits"
+                placeholder="1234 5678 9101 1020"
                 required>
         </label>
         </p>
-        <label id ="cardHolder">CARD HOLDER
+        <label id ="cardHolder"><strong>CARD HOLDER</strong>
             <input type="text" 
                 name="fullName" 
                 placeholder="John Doe"
@@ -34,14 +34,14 @@
         </label>
 
         <div id="cardExpiration">
-            <label for="expirationDate">EXPIRATION</label>
+            <label for="expirationDate"><strong>EXPIRATION</strong></label>
             <input type='text' id='month' name="expMonth" placeholder="MM" aria-labelledby="expirationDate">
             <input type='text' id='year' name="expYear" placeholder="YY" aria-labelledby="expirationDate">
         </div>
         </section>
         <section id="cardBack">
             <div id="blackBorder"></div>
-            <label id ="CVC">CVC/CVV
+            <label id ="CVC"><strong>CVC/CVV</strong>
             <input 
             type="text" 
             id="CVV"
@@ -51,9 +51,9 @@
             ></label>
         </section>
           
-        <button type="submit">Submit</button>
+        <button type="submit"><strong>Submit</strong></button>
       </form>
-
+      <section class="errors"></section>
     </main>
   </body>
 </html>
