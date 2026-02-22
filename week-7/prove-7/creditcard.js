@@ -13,7 +13,7 @@ function displayError(msg) {
 
 function isCardNumberValid(number) {
 	// normally we would contact a credit card service...but we don't know how to do that yet. So to keep things simple we will only accept one number
-	return number === '1234123412341234'
+	return number === '1234 1234 1234 1234'
 }
 
 function submitHandler(event) {
@@ -25,7 +25,7 @@ function submitHandler(event) {
   const cardNum = cardNumber.value.trim();
     // Check if it's numeric and valid in one go
     
-      if (!/^\d{16}$/.test(cardNum)) {
+      if (/^\d{4}(\s?\d{4}){3}$/.test(cardNum)) {
       errorMsg += 'Card number must be 16 digits\n';
       } else if (!isCardNumberValid(cardNum)) {
         errorMsg += 'Card number is not valid\n';
@@ -36,10 +36,10 @@ function submitHandler(event) {
     const expMonth = Number(document.querySelector('#month').value);
     const currentDate = new Date()
 
-    if (2000 + expYear < currentDate.getFullYear() || (2000 + expYear === currentDate.getFullYear() && expMonth <= (currentDate.getMonth()))
+    if (2000 + expYear < currentDate.getFullYear() || (2000 + expYear === currentDate.getFullYear() && expMonth < (currentDate.getMonth()))
     ) {
         errorMsg += 'Card is expired\n';
-    }
+
   }
 
     if (errorMsg !== '') {
@@ -50,7 +50,6 @@ function submitHandler(event) {
     // Success: show a confirmation message
     const formContainer = document.getElementById('checkoutForm');
     formContainer.innerHTML = '<h2>Thank you for your purchase.</h2>';
-
+}
   
 document.querySelector('#checkoutForm').addEventListener('submit', submitHandler)
-          
