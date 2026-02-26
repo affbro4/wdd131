@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Demo</title>
+    <link rel="stylesheet" href="courses.css">
+    <script src="courses.js" defer></script>
+</head>
+<body>
+    <main>
+  
+    <h3>Add New Section</h3>
+    <form id="addSectionForm">
+    <input id="newRoomNum" placeholder="Room #" required />
+    <input id="newEnrolled" placeholder="# Enrolled" required />
+    <input id="newDays" placeholder="Days" required />
+    <input id="newInstructor" placeholder="Instructor" required />
+    <button type="submit">Add Section</button>
+    </form>
+
+            
+    <h1 id="courseName"></h1>
+    <h2 id="courseCode"></h2>
+    <label for="sectionNumber">Section Number</label>
+    <input id="sectionNumber" />
+    <button id="enrollStudent">Enroll Student</button>
+    <table>
+    <thead>
+        <tr>
+        <th>Section#</th>
+        <th id="room">Room#</th>
+        <th>#Enrolled</th>
+        <th>Days</th>
+        <th>Instructor</th>
+        </tr>
+    </thead>
+    <tbody id="sections"></tbody>
+    </table>
+    </main>        
+    
+    
+</body>
+</html>
