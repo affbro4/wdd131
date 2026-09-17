@@ -2,20 +2,20 @@
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
-    border: 1px solid rgb(121, 120, 120);
+    border: 1px solid darkgray;
     padding-bottom: 80px;
     padding-top: 60px;
 }
 body {
     text-align: center;
-    background-color: rgb(223, 222, 222);
+    background-color: #ddd;
 }
 li {
     list-style: none;
 }
 
 hr {
-    border:  2px solid rgb(53, 122, 240);
+    border:  2px solid #035f9c;
     width: 58%;
 }
 .list {
@@ -28,5 +28,5 @@ img {
 }
 p {
     font-weight: bold;
-    color: rgb(53, 122, 240);;
+    color: #035f9c;
 }
