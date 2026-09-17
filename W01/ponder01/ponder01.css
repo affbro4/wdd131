@@ -1,0 +1,32 @@
+#content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid rgb(121, 120, 120);
+    padding-bottom: 80px;
+    padding-top: 60px;
+}
+body {
+    text-align: center;
+    background-color: rgb(223, 222, 222);
+}
+li {
+    list-style: none;
+}
+
+hr {
+    border:  2px solid rgb(53, 122, 240);
+    width: 58%;
+}
+.list {
+    text-align: left;
+    margin: auto;
+    width: 350px;
+}
+img {
+    width: 350px;
+}
+p {
+    font-weight: bold;
+    color: rgb(53, 122, 240);;
+}
