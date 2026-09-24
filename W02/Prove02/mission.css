@@ -1,0 +1,45 @@
+#content {
+    max-width: 500px;
+    margin: 0 auto;
+    border: 1px solid black;
+    padding: 70px;
+}
+
+h6, h2{
+    text-align: center;
+}
+h2 {
+    font-size: 30px;
+    margin: 10px;
+}
+h6 {
+    font-size: 13px;
+    color: #035f9c;
+    margin-bottom: 1px;
+    margin-top: 10px;
+}
+hr {
+    border: 1px solid lightgray;
+    width: 60%;
+}
+p {
+    padding-left: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#i {
+    font-style: italic;
+    padding-left: 30px;
+}
+.list {
+    padding-left: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+li {
+    padding: 7px;
+}
+img {
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+}
