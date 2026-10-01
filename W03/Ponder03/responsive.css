@@ -47,10 +47,35 @@ footer {
     text-align: center;
 }
     
+@media screen and (min-width: 600px){
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+
+    }
+     nav a{
+        display: inline-block;
+
+        
+    }
+    nav {
+        display: flex;
+        justify-content: end;
+    }
+    .menu-btn {
+        display: none;
+    }
+}
 
 
+@media screen and (min-width: 800px) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    
 
-@media screen and (min-width: 700px) {
+    }
+   
 
 }
           
