@@ -25,6 +25,7 @@ button {
     color: white;
     margin: 10px;
     font-size: 2em;
+    cursor: pointer;
     
 }
 nav a { 
@@ -73,6 +74,7 @@ footer {
     }
     img {
         margin: 30px;
+        margin-left: 5em;
     }
 
     div {
@@ -95,5 +97,8 @@ footer {
 @media (min-width: 1000px){
     div {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+    img {
+        margin: 30px;
     }
 }
