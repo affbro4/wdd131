@@ -1,7 +1,7 @@
 body {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background: gray;
+    background: lightgray;
 }
 
 section {
@@ -20,7 +20,8 @@ section a {
     text-decoration: none;
     color: white;
     background: gray;
-  
+    border: solid 3px black;
+    border-radius: 10px;
     text-align: center;
     
 }
