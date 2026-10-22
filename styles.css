@@ -1,0 +1,26 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: gray;
+}
+
+section {
+    border: solid 1px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.3); 
+    text-align: center;
+    margin: 1em;
+    padding: 1em;
+    background: white;
+    
+}
+section a {
+    display: block;
+    margin: 1em;
+    text-decoration: none;
+    color: white;
+    background: gray;
+  
+    text-align: center;
+    
+}
