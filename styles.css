@@ -1,27 +1,117 @@
-body {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background: lightgray;
+/* Modern color palette */
+:root {
+    --navy: #172554;
+    --blue: #2563EB;
+    --lavender: #E0E7FF;
+    --page-bg: #F1F5F9;
+    --text-dark: #1E293B;
 }
 
-section {
-    border: solid 1px;
-    border-radius: 10px;
-    box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.3); 
-    text-align: center;
-    margin: 1em;
+/* Page layout */
+body {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    background: var(--page-bg);
+    color: var(--text-dark);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
     padding: 1em;
-    background: white;
-    
+    gap: 1em;
 }
+
+/* Week cards */
+section {
+    border: none;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.12);
+    text-align: center;
+    margin: 0;
+    padding: 1.5em;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Alternate colors by row */
+section:nth-child(4n + 1),
+section:nth-child(4n + 2) {
+    background: var(--navy);
+    color: white;
+}
+
+section:nth-child(4n + 3),
+section:nth-child(4n + 4) {
+    background: var(--lavender);
+    color: var(--navy);
+}
+
+/* Headings */
+section h2 {
+    font-size: 1.6em;
+    margin-top: 0.2em;
+    margin-bottom: 1em;
+}
+
+section h3 {
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 1.5em;
+}
+
+/* Assignment links */
 section a {
     display: block;
-    margin: 1em;
+    margin: 0.8em 0;
+    padding: 0.9em;
     text-decoration: none;
-    color: white;
-    background: gray;
-    border: solid 3px black;
-    border-radius: 10px;
+    font-weight: bold;
+    border: 2px solid transparent;
+    border-radius: 8px;
     text-align: center;
-    
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+/* Links inside navy cards */
+section:nth-child(4n + 1) a,
+section:nth-child(4n + 2) a {
+    color: white;
+    background: #263B70;
+    border-color: #52658F;
+}
+
+/* Links inside lavender cards */
+section:nth-child(4n + 3) a,
+section:nth-child(4n + 4) a {
+    color: var(--navy);
+    background: #C7D2FE;
+    border-color: #A5B4FC;
+}
+
+/* Hover effects */
+section a:hover {
+    background: var(--blue) !important;
+    color: white !important;
+    border-color: var(--blue);
+}
+
+section a:focus-visible {
+    outline: 3px solid #F59E0B;
+    outline-offset: 3px;
+}
+
+section:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.18);
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+    body {
+        grid-template-columns: 1fr;
+        padding: 0.75em;
+        gap: 0.75em;
+    }
+
+    section {
+        padding: 1.2em;
+    }
 }
