@@ -98,10 +98,7 @@ section a:focus-visible {
     outline-offset: 3px;
 }
 
-section:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.18);
-}
+
 
 /* Mobile layout */
 @media (max-width: 600px) {
