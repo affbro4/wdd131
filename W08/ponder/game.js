@@ -20,4 +20,10 @@ function setDieImages(imagePath){
     });
 }
 
+function isDieUnlocked(dieImage) {
+    return Array.from(document.querySelectorAll('#gameboard input'))
+        .filter(checkbox => !checkbox.checked)
+        .find(unchecked => unchecked.className === dieImage.className);
+}
+
     
