@@ -1,6 +1,9 @@
 const stats = {
     level: 5,
     health: 0
+
+
+    
 }
 stats.health = stats.level * 20;
 
